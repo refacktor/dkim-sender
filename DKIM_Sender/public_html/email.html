@@ -1,0 +1,58 @@
+<html>
+	<!-- $Id: email.html,v 1.1 2010-04-03 14:23:39 alex Exp $ -->
+	<head>
+		<title>Email From</title>
+	</head>
+	<style type="text/css">
+		input{
+			background-color:#FFFFFF;
+			border-width:1px;
+			border-style:solid;
+			border-color:#dedede;
+			margin:0.5em;
+		}
+		textarea{
+			background-color:#FFFFFF;
+			border-width:1px;
+			border-style:solid;
+			border-color:#dedede;
+			margin:0.5em;
+		}
+		h1{
+			height:35px;
+			background-image:url(header.gif);
+			border-width:2px;
+			border-color:#dedede;
+			border-style:solid;
+		}
+		center{
+			background-color:#efefef;
+		}
+	</style>
+	<body>
+		<center>
+			<form action='dkim.pl' method='get' accept-charset="utf-8">
+				<h1>
+					Email Form
+				</h1>
+				<input type='hidden' name='internet_explorer_dummy' value='&#456;'>
+				To:
+				<br>
+				<input id='to' name='to' type='text'>
+				<br>
+				From:
+				<br>
+				<input id='from' name='from' type='text'>
+				<br>
+				Subject:
+				<br>
+				<input id='subject' name='subject' type='text'>
+				<br>
+				Message:<br>
+				<textarea id='body' name='body' rows="10" cols="50"></textarea>
+				<br>
+				<input type='submit' value='Submit Query' style="background-color:#efefde;">
+			</form>
+		</center>
+	</body>
+</html>
